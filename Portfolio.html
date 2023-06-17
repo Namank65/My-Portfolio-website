@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/My Portfolio Website/Porfolio.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo_port3.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <!-- <p>Web Developer</p> -->
+                <h1>Hi, I'm <span>Souamya</span> From India</h1>
+                <span id="element"></span>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------About------------------------------------------------>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pic_3_port.png">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio libero et voluptatibus fuga ut quia
+                        inventore eaque ab numquam, incidunt suscipit voluptates ullam hic ex, fugit dolorem perferendis
+                        consectetur obcaecati.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>UI\UX</span><br>Designing Web/App Development</li>
+                            <li><span>App Development</span><br>Building Androind Apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>UI\UX</span><br>Designing Web/App Development</li>
+                            <li><span>App Development</span><br>Building Androind Apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>UI\UX</span><br>Designing Web/App Development</li>
+                            <li><span>App Development</span><br>Building Androind Apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Setup and start animation! -->
+    <script src="/My Portfolio Website/Portfolio.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed('#element', {
+            strings: ['Graphic Designer', 'Web Devloper...'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
