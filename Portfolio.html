@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="/My Portfolio Website/Porfolio.css">
+    <script src="https://kit.fontawesome.com/e7ef7ccebb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,13 +15,15 @@
         <div class="container">
             <nav>
                 <img src="logo_port3.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
 
             <div class="header-text">
@@ -47,8 +50,8 @@
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links active-link" onclick="opentab('Experience')">Experience</p>
-                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="Skills">
                         <ul>
@@ -77,6 +80,111 @@
             </div>
         </div>
     </div>
+    <!-----------------------------------------Services-------------------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h3 class="sub-title">My Services</h3>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code fa-flip"></i>
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit quo, quasi aliquam
+                        enim sit ab sunt sapiente pariatur cupiditate, esse tempora dolor amet iusto ratione veniam
+                        doloribus, sint illo.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-compass-drafting fa-flip"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit quo, quasi aliquam
+                        enim sit ab sunt sapiente pariatur cupiditate, esse tempora dolor amet iusto ratione veniam
+                        doloribus, sint illo.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store fa-flip"></i>
+                    <h3>App Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit quo, quasi aliquam
+                        enim sit ab sunt sapiente pariatur cupiditate, esse tempora dolor amet iusto ratione veniam
+                        doloribus, sint illo.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------Portfolio--------------------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h3 class="sub-title">My Work</h3>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/My Portfolio Website/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex provident illum
+                            necessitatibus? Voluptatum odit sit fugit enim molestiae rerum possimus</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/My Portfolio Website/work-2.png">
+                    <div class="layer">
+                        <h3>Music Player App</h3>
+                        <p>Lorem ipsum dolor sit amet adipisicing elit. Possimus ex provident illum necessitatibus?
+                            Voluptatum odit sit fugit enim molestiae rerum possimus</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/My Portfolio Website/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex provident illum
+                            necessitatibus? Voluptatum odit molestiae rerum possimus</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-------------------------------------------Contact--------------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> namankumar62039@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i> +916203982931</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/naman.roy.9678"><i class="fa-brands fa-facebook-f "></i></a>
+                        <a href="https://twitter.com/home"><i class="fa-brands fa-twitter "></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram "></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin "></i></a>
+                    </div>
+                    <a href="tem cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter Your Message "></textarea>
+                        <button type="submit" class="btn btn2 btn3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Naman. Made with <i class="fa-solid fa-heart fa-beat"></i> by Souamya.</p>
+        </div>
+    </div>
+
+
+
+
     <!-- Setup and start animation! -->
     <script src="/My Portfolio Website/Portfolio.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
