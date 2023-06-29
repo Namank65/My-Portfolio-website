@@ -47,7 +47,7 @@ nav ul li a::after{
     content: "";
     width: 0;
     height: 3px;
-    background-image: linear-gradient(30deg, #0000ff, #66cb0e);
+    background: linear-gradient(to right,#2af598, #22e4ac, #1bd7bb, #14c9cb, #0fbed8, #08b3e5);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -65,10 +65,10 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #66cb0e;
-    /* background-image: linear-gradient(30deg, blue, rgb(102, 203, 14));
+    background: linear-gradient(to right,#2af598, #22e4ac, #1bd7bb, #14c9cb, #0fbed8, #08b3e5);
+    -webkit-text-fill-color: transparent;
     background-clip: text;
-    color: transparent; */
+    -webkit-background-clip: text;
 }
 
 /* ------------------------------------About------------------------------------------------ */
@@ -83,9 +83,6 @@ nav ul li a:hover::after{
 .about-col-2 h2{
     margin-top: 80px;
     margin-bottom: 20px;
-    /* background-image: linear-gradient(0deg, blue, rgb(102, 203, 14));
-    background-clip: text;
-    color: transparent; */
 }
 .about-col-1{
     flex-basis: 35%;
@@ -117,7 +114,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background-image: linear-gradient(30deg, blue, rgb(102, 203, 14));
+    background: linear-gradient(to right,#2af598, #22e4ac, #1bd7bb, #14c9cb, #0fbed8, #08b3e5);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -131,7 +128,6 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: black;
     font-weight: 700;
     font-size: 14px;
 }
@@ -141,13 +137,10 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
 /* my creativity */
 #element{
-    /* background-image: linear-gradient(30deg, blue, rgb(102, 203, 14)); 
-    background-clip: text;
-    color: transparent; */
-    /* color: #66cb0e; */
-    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    background: linear-gradient(to right,#2af598, #22e4ac, #1bd7bb, #14c9cb, #0fbed8, #08b3e5);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -158,7 +151,10 @@ nav ul li a:hover::after{
     height: 90px
 }
 .tab-contents ul li span{
-    color: rgb(89, 169, 19);
+    background: linear-gradient(to right,#2af598, #22e4ac, #1bd7bb, #14c9cb, #0fbed8, #08b3e5);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 /* ----------------------------------------Services------------------------------------------------------- */
 #services{
@@ -195,8 +191,12 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #66cb0e;
+    background: linear-gradient(to right,#2af598, #22e4ac, #1bd7bb, #14c9cb, #0fbed8, #08b3e5);
+    color: black;
     transform: translateY(-10px);
+}
+.services-list div a:hover{
+    color: black;
 }
 /* -----------------------------------------Portfolio-------------------------------------------------------*/
 #portfolio{
@@ -222,7 +222,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #66cb0e);
+    background: linear-gradient(rgba(0,0,0,0.6), #1bd7bb);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -254,7 +254,7 @@ nav ul li a:hover::after{
     text-align: center;
 }
 .work:hover img{
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 .work:hover .layer{
     height: 100%;
@@ -263,7 +263,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #66cb0e;
+    border: 1px solid #1bd7bb;
     border-radius: 6px;
     padding: 14px 50px;
     text-decoration: none;
@@ -271,7 +271,8 @@ nav ul li a:hover::after{
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #66cb0e;
+    background: #1bd7bb;
+    color: black;
 }
 /* -----------------------------------------Contact------------------------------------------------------- */
 .contact-left{
@@ -284,7 +285,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #66cb0e;
+    color: #1bd7bb;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -300,7 +301,7 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #66cb0e;
+    color: #1bd7bb;
     transform: translateY(-5px);
 }
 .btn.btn2{
@@ -338,7 +339,7 @@ form input, form textarea{
     margin-top: 20px;
 }
 .copyright i{
-    color: #66cb0e;
+    color: red;
 }
 /* -----------------------------------------Making Website responsive----------------------------------------- */
 
