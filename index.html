@@ -167,11 +167,11 @@
                     <a href="tem cv.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Enter Your Name" required>
-                        <input type="email" name="email" placeholder="Enter Your Email" required>
-                        <input type="tel" name="number" placeholder="Enter Your Contact No" required>
-                        <textarea name="Message" rows="6" placeholder="Enter Your Message "></textarea>
+                        <input type="email" name="Email" placeholder="Enter Your Email" required>
+                        <input type="tel" name="Number" placeholder="Enter Your Contact No">
+                        <textarea name="Message" rows="6" placeholder="Enter Your Message" required></textarea>
                         <button type="submit" class="btn btn2 btn3">Submit</button>
                     </form>
                 </div>
@@ -190,10 +190,23 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         let typed = new Typed('#element', {
-            strings: ['Graphic Designer', 'Web Devloper...'],
+            strings: ['Graphic Designer', 'Web Developer...'],
             typeSpeed: 50,
         });
     </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzbJIArpm_dvXgV8he4Vtv7F7ahrbLPWe4om9uBYGu6ffePnwy3kpEwm3deSfbLJPk5UA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
 </body>
 
 </html>
