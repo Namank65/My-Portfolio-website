@@ -341,6 +341,11 @@ form input, form textarea{
 .copyright i{
     color: red;
 }
+#msg{
+    color: #2af598;
+    margin-top: -10px;
+    direction: block;
+}
 /* -----------------------------------------Making Website responsive----------------------------------------- */
 
 nav .fa-solid{
